@@ -125,5 +125,15 @@ After building and training the models, I placed the performance metrics into th
 
 # Discussion 
 
-Training the models was a relatively straight forward process. It was interesting to not that our most effective model - Random Forest took roughly 10 minutes to train! This is likely due to the large quantity of rows (roughly 400,000) as well as about 20 columns. The large degree of branching required to build this model was substantial. It was unfortunate that a PCA resulted in roughly double the error across the board. In the future, I would have liked to tune which features PCA had selected and played with the `VARIANCE_PCA` hyperparameter to try and improve thse values. 
+Training the models was a relatively straight forward process. It was interesting to not that our most effective model - Random Forest took roughly 10 minutes to train! This is likely due to the large quantity of rows (roughly 400,000) as well as about 20 columns. The large degree of branching required to build this model was substantial. It was unfortunate that a PCA resulted in roughly double the error across the board. In the future, I would have liked to tune which features PCA had selected and played with the `VARIANCE_PCA` hyperparameter to try and improve thse values a bit.  For now, lets just consider the non-pca models, since each model had an r^2 within 5% or even more, it is reasonable to go ahead and compare the RMSEs of these values since we know these models have high explanatory power over the data. I tabulated the performance of each model below: 
+
+
+| Model                     | R-squared Train | R-squared Test | RMSE Train       | RMSE Test        |
+|---------------------------|-----------------|----------------|------------------|------------------|
+| Linear Regression         | 0.960352282     | 0.9620124098   | 27590.0816264309 | 27091.4913193792 |
+| Linear Regression with PCA| 0.8781704898    | 0.8797881773   | 48324.4989806637 | 48367.4578600186 |
+| Random Forest             | 0.9986926693    | 0.9916868227   | 5009.9759650896  | 12456.7796662126 |
+| Random Forest with PCA    | 0.9932200283    | 0.9541479923   | 11391.5950350925 | 29828.8113418557 |
+| XGBoost                   | 0.994284994     | 0.9882463032   | 10470.8033770846 | 15069.4710679681 |
+| XGBoost with PCA          | 0.9466930938    | 0.934866723    | 31965.6152721463 | 35615.8873654423 |
 
