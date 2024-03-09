@@ -1,9 +1,9 @@
 # Philadelphia Housing Price Predictor 
 
-### Contents 
-**Preprocessing and Models:** models.ipynb
-**Raw Data:** opa_properties_public.csv 
-**Model Scores:** model_scores.csv 
+### Files 
+- **Preprocessing and Models:** models.ipynb
+- **Raw Data:** opa_properties_public.csv 
+- **Model Scores:** model_scores.csv 
 
 Various Models that predict the sale price of a home in Philadelphia. The following models are used in this project: 
 - Linear Regression
