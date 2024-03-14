@@ -99,7 +99,7 @@ zip_code_0                      0.150231
 Attributes with low correlations to the target attribute (which i defined as those with less than 15% correlation) were dropped. For future analysis and as a potential hyperparemeter, I would have considered adjusting this value and seeing how the models performed for different cut-offs. 
 
 ### Multicolinearity 
-after performing some analysis, it was found that some features were colinear with each other. This didnt necessaly affect the accuracy of the models but made it difficult to determine which features specifically contributed to the predictive power of the models. I used Princple Component Analysis on the dataset for all models to effictively remove the problem of multicolinearity, this will be compared to models run on non-pca data. Below is a heatmap with each sqaure showing the relationship between the feature in the row of that sqaure and its colummn. 
+after performing some analysis, it was found that some features were colinear with each other. This didnt necessarily affect the accuracy of the models but made it difficult to determine which features specifically contributed to the predictive power of the models. I used Princple Component Analysis on the dataset for all models to effictively remove the problem of multicolinearity, this will be compared to models run on non-pca data. Below is a heatmap with each sqaure showing the relationship between the feature in the row of that sqaure and its colummn. 
 
 ![image](https://github.com/afeins19/PhillyHousingPricePredictor/assets/56986596/2c3e801b-8527-48f0-95b0-d868d328c619)
 
