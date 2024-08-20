@@ -67,7 +67,7 @@ Some of the data in this dataset was categorical, I apply the following encoding
 - ordinal encoding
 
 ### Outlier Prunning 
-using Datawrangler and an IQR (Inter-Quartile Range) analysis, I set hard values for the minimum and maximum of values of our features. Rows with features that did not fall within these limits were dropped so as to not skew the models. 
+Using Datawrangler and IQR (Inter-Quartile Range) analysis, I set hard values for the minimum and maximum of values of our features. Rows with features that did not fall within these limits were dropped so as to not skew the models. 
 
 ### Correlation Analysis 
 A correlation matrix was created to show how each remaining correlated with the target variable (market value), below is the correlation data for various attributes. Not that categorically encoded attributes were suffixed with a numerical value such as `year_built_0`. 
